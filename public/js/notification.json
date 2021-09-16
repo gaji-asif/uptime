@@ -1,0 +1,12 @@
+{
+  "buildApprove": "Congratulations {{EMPNAME}}. Your Upload {{BUILDNAME}} has been approved!",
+  "newChallenge": " {{CHALLENGENAME}}.",
+  "buildApproveWithChallenge": "Congratulations {{EMPNAME}}. Your Upload {{BUILDNAME}} with challange {{CHALLENGENAME}} is approved.",
+  "topLeaderboard": "Congratulations {{EMPNAME}}. You are position {{POSITION}} and now in the top leaderboard for your company.",
+  "category": "Your company {{CATACTION}} the  category {{CATNAME}}.",
+  "pointIncrements": "Great job {{EMPNAME}}, You have increased your score by {{POINT}}.",
+  "categoryUpdate": "A company {{CATACTION}} a category {{CATNAME}}.",
+  "firstLeaderboard": "{{EMPNAME}} is spot 1st position in leaderboard.",
+  "winBuildWithCategory": "{{EMPNAME}} hits {{COUNT}} build approved with '{{CATNAME}}' category.",
+  "buildWithCategory": "{{EMPNAME}} created a new build '{{BUILDNAME}}' with '{{CATNAME}}' category."
+}

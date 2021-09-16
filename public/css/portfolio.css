@@ -1,0 +1,88 @@
+.arrow-layer{position:absolute;background:rgb(0, 0, 0);background:rgba(0, 0, 0, 0.5);color:#f1f1f1;width:10%;cursor:pointer;}
+.expand-arrow,.chal-expand-arrow,.testinomial-expand-arrow{cursor:pointer;}
+.left-arrow,.chal-left-arrow,.testinomial-left-arrow{left:20px;top:50%;z-index:200;}
+.right-arrow,.chal-right-arrow,.testinomial-right-arrow{right:20px;top:50%;z-index:200;}
+.close-expand-button{position:absolute;right:20px;top:0%;z-index:210;}
+.info-circle{cursor:pointer;color:white;}
+.mobile-close-button,.challenge-mobile-close-button,.testinomialmodal-mobile-close-button{right:10px;top:10px;z-index:200;position:absolute;}
+.purchase_btn{z-index:11;margin-left:35%;width:80%;max-width:700px;text-align:center;color:#ccc;padding:10px 0;height:150px;}
+.overlay{display:none;position:fixed;z-index:10;padding-top:100px;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.8);}
+.showblock{display:block;}
+.hideblock{display:none;}
+.modal-desc-img{min-width:80px;height:80px;border-radius:50%;object-fit:cover;}
+.modal{animation-name:zoom;animation-duration:0.6s;}
+@keyframes zoom{from{transform:scale(0)}
+to{transform:scale(1)}
+}
+.pre-img{position:relative;margin-top:-85%;margin-left:3%;width:5%;z-index:2000;}
+.next-img{position:relative;float:right;margin-top:-46%;width:5%;margin-right:3%;z-index:2000;}
+#owl-demo .item{margin:3px;}
+#owl-demo .item img{display:block;margin-left:-3px;margin-top:-3px;width:480px;height:400px;z-index:100;object-fit:cover;}
+.carousel-layer{position:relative;width:100%;height:100%;overflow:hidden;}
+.style-img-layer{width:100%;height:auto;}
+.style-img{position:absolute;z-index:3000;width:5%;margin:1%;}
+.close{color:#2e2626;font-size:40px;font-weight:bold;transition:0.3s;}
+.close:hover,
+.close:focus{color:#bbb;text-decoration:none;cursor:pointer;}
+.desc-text{width:100%;font-size:10px;font-weight:300;}
+.desc-emp-name{color:#8edbd7;font-weight:bold;font-size:15px;}
+.desc-intro{margin-top:2%;margin-left:3%;width:100%;}
+.description-header{padding-top:5%;width:100%;height:auto;display:inline-flex;}
+.description-content{padding-left:3%;padding-top:3%;width:100%;word-break:normal;border-radius:10px;overflow-y:auto;background-color:rgba(143, 255, 254, 0.75);height:60%;}
+.description{font-size:13px;font-weight:300;}
+.description-section{height:100%;margin-bottom:2%;}
+.category{display:inline-flex;}
+.subcategory-layer{width:100%;height:auto;overflow-y:auto;}
+.challenge_image_layer{width:100%;}
+.category-item{background-color:#00b0ff;color:white;height:auto;width:fit-content;font-weight:bold;font-size:10px;margin-left:6px;margin-top:4%;padding:5px;border-radius:4px}
+.badge-css{background-color:white;color:#00b0ff;border-radius:50%;margin-left:5px;font-size:7px;}
+.modal{display:none;padding-left:15%;padding-top:10%;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.7);}
+.my-modal-content{display:inline-flex;margin:auto;width:80%;height:80%;overflow:auto;background-color:white;border:solid;border-color:#101010;border-width:2px;}
+.right-content{width:100%;height:100%;}
+.approved{font-size:10px;color:blue;cursor:pointer;}
+.rejected{font-size:10px;color:red;cursor:pointer;}
+.approved:hover,.rejected:hover{font-weight:bold;}
+.image_fit_css{width:100vmax;object-fit:cover;}
+@media (min-width:1200px){.h-col-1{flex:0 0 8.33333%;max-width:8.33333%;}
+.h-col-2{flex:0 0 16.66667%;max-width:16.66667%;}
+.h-col-3{flex:0 0 25%;max-width:25%;}
+.h-col-4{flex:0 0 33.33333%;max-width:33.33333%;}
+.h-col-5{flex:0 0 41.66667%;max-width:41.66667%;}
+.h-col-6{flex:0 0 50%;max-width:50%;}
+.h-col-7{flex:0 0 58.33333%;max-width:58.33333%;}
+.h-col-8{flex:0 0 66.66667%;max-width:66.66667%;}
+.h-col-9{flex:0 0 75%;max-width:75%;}
+.h-col-10{flex:0 0 83.33333%;max-width:83.33333%;}
+.h-col-11{flex:0 0 91.66667%;max-width:91.66667%;}
+.h-col-12{flex:0 0 100%;max-width:100%;}
+}
+
+/* Fixes image aspect ratio issue in profile builds modal */
+.my-modal-content > div[class^="col"]:first-child, .my-modal-content > div[class^="col"]:first-child .row, .my-modal-content > div[class^="col"]:first-child div[class^="col"], .right-content, .right_build_image {
+    height: 100%!important;
+}
+.right_build_image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.image_fit_css {
+    width: 100%!important;
+    height: auto!important;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.description-header .close {
+    color: #000;
+}
+.close {
+    opacity: 1;
+}
+@media (max-width: 768px) {
+    .my-modal-content > div[class^="col"]:first-child, .my-modal-content > div[class^="col"]:first-child .row, .my-modal-content > div[class^="col"]:first-child div[class^="col"], .right-content, .right_build_image {
+        height: auto!important;
+    }
+}

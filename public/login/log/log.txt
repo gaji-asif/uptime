@@ -1,0 +1,629 @@
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php3CF7.tmp
+            [fileName:SplFileInfo:private] => php3CF7.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php585.tmp
+            [fileName:SplFileInfo:private] => php585.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php534.tmp
+            [fileName:SplFileInfo:private] => php534.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpC440.tmp
+            [fileName:SplFileInfo:private] => phpC440.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpBBB.tmp
+            [fileName:SplFileInfo:private] => phpBBB.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpF070.tmp
+            [fileName:SplFileInfo:private] => phpF070.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php9F9E.tmp
+            [fileName:SplFileInfo:private] => php9F9E.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php4A3.tmp
+            [fileName:SplFileInfo:private] => php4A3.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 321
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php4EED.tmp
+            [fileName:SplFileInfo:private] => php4EED.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 557
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php9609.tmp
+            [fileName:SplFileInfo:private] => php9609.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 857
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpC44E.tmp
+            [fileName:SplFileInfo:private] => phpC44E.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 853
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpECEC.tmp
+            [fileName:SplFileInfo:private] => phpECEC.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 1021
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php7DB4.tmp
+            [fileName:SplFileInfo:private] => php7DB4.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 1021
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php870B.tmp
+            [fileName:SplFileInfo:private] => php870B.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 1017
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpA5C0.tmp
+            [fileName:SplFileInfo:private] => phpA5C0.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 1017
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php14E6.tmp
+            [fileName:SplFileInfo:private] => php14E6.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 1018
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php6317.tmp
+            [fileName:SplFileInfo:private] => php6317.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 943
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php523A.tmp
+            [fileName:SplFileInfo:private] => php523A.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 943
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\php82B3.tmp
+            [fileName:SplFileInfo:private] => php82B3.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 943
+    [userData] => Array
+        (
+            [id] => 713
+            [full_name] => Toplev, LLC
+            [email] => achall@toplev.io
+            [company_id] => 120
+            [industry] => 0
+            [phone_number] => 123456
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpA41F.tmp
+            [fileName:SplFileInfo:private] => phpA41F.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [challenge_id] => 943
+    [userData] => Array
+        (
+            [id] => 652
+            [full_name] => Alexander Hall
+            [email] => alexandros.hall9@gmail.com
+            [company_id] => 119
+            [industry] => -1
+            [phone_number] => 2393133114
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpC17D.tmp
+            [fileName:SplFileInfo:private] => phpC17D.tmp
+        )
+
+)
+
+-------------------------
+Array
+(
+    [build_text] => Ben guttridge
+    [subcategory] => 2018
+    [userData] => Array
+        (
+            [id] => 652
+            [full_name] => Alexander Hall
+            [email] => alexandros.hall9@gmail.com
+            [company_id] => 119
+            [industry] => -1
+            [phone_number] => 2393133114
+        )
+
+    [image] => Illuminate\Http\UploadedFile Object
+        (
+            [test:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 
+            [originalName:Symfony\Component\HttpFoundation\File\UploadedFile:private] => verified.png
+            [mimeType:Symfony\Component\HttpFoundation\File\UploadedFile:private] => image/png
+            [error:Symfony\Component\HttpFoundation\File\UploadedFile:private] => 0
+            [hashName:protected] => 
+            [pathName:SplFileInfo:private] => C:\xampp7.3\tmp\phpDC1B.tmp
+            [fileName:SplFileInfo:private] => phpDC1B.tmp
+        )
+
+)
+
+-------------------------

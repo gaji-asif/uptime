@@ -1,0 +1,409 @@
+.table-billy-main {
+    width: 695px;
+    height: 1000px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 0 10px;
+    zoom: 1.3;
+    position: relative;
+}
+
+.right-side {
+    width: 50%;
+    float: left;
+    padding: 20px 10px 20px 0;
+}
+
+.left-side {
+    width: 48%;
+    float: left;
+    padding: 20px 0 20px 0;
+}
+
+h1.yr-time {
+    font-size: 57px;
+    color: #fca610;
+    margin: 0;
+}
+
+span.time-span {
+    color: #5a5a5a;
+    display: block;
+    font-size: 26px;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0 0 0 28px;
+}
+
+span.report-span {
+    font-size: 28px;
+    color: #ed9c42;
+    font-weight: bold;
+}
+
+.yr-div {
+    padding: 10px;
+    border-bottom: 3px solid #6796a6;
+}
+
+span.total-span {
+    display: block;
+    color: #5a5a5a;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1.num-Conunt {
+    text-align: center;
+    color: #3047b2;
+    font-size: 80px;
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.point-width {
+    padding: 5px;
+}
+
+.point-width ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: -10px;
+}
+
+.point-width {
+    width: 46%;
+    float: left;
+}
+
+.li-icon {
+    background-color: #afb4c9;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+}
+
+.li-icon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-size: 22px;
+}
+
+.point-name {
+    float: left;
+    width: calc(100% - 55px);
+    padding: 5px 0 5px 5px;
+    position: relative;
+}
+
+span.point-title,
+span.point-count {
+    font-size: 11px;
+    color: #5a5a5a;
+    font-weight: bold;
+    display: block;
+    font-family: Arial;
+}
+
+span.point-count {
+    font-size: 14px;
+}
+
+.point-conutDiv:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid #afb4c9;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.clearfix {
+    clear: both;
+}
+
+.point-conutDiv {
+    position: relative;
+}
+
+.point-width ul li {
+    margin: 10px 0px;
+}
+
+.point-width ul li.light-blue .point-conutDiv .li-icon {
+    background-color: #89d2dd;
+}
+
+.point-width ul li.light-blue .point-conutDiv:before {
+    border-right: 5px solid #89d2dd;
+}
+.count-point{
+    min-height: 300px;
+    border-bottom: 3px solid #6796a6;
+}
+
+.count-point,
+.total-vote {
+    display: block;
+}
+
+.total-vote {
+    padding: 10px;
+    border-top: 3px solid #6796a6;
+    text-align: center;
+}
+
+h5.totalVote {
+    font-size: 22px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Arial;
+    margin: 10px 0;
+}
+
+h2.count-vote {
+    color: #000;
+    margin: 0;
+    font-size: 55px;
+    font-family: Arial;
+}
+
+.popup-div {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    position: relative;
+}
+
+.popup-div img {
+    width: 100%;
+    height: auto;
+}
+
+.id-popup {
+    top: 41%;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h2.popup-title {
+    font-size: 20px;
+    color: #fff;
+    font-family: Arial;
+    text-transform: capitalize;
+    -webkit-text-transform: capitalize;
+    margin: 5px 0;
+}
+
+span.popup-id,
+.popup-num {
+    font-size: 16px;
+    display: block;
+    text-decoration: underline;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.popup-num {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.wer-div h2 {
+    font-size: 26px;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 0 20px;
+    text-shadow: 2px 9px 5px #48484869;
+}
+
+.wer-div {
+    border-bottom: 3px solid #6796a6;
+}
+
+.flag-img {
+    position: relative;
+    border-bottom: 3px solid #6796a6;
+    padding: 5px 0 2px 0;
+}
+
+.id-flag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+span.flag-id {
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+h2.flag-title {
+    margin: 4px 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.flag-score {
+    border-bottom: 3px solid #6796a6;
+    padding-top: 20px;
+    position: relative;
+}
+
+.score-change {
+    width: 50%;
+    float: left;
+}
+
+h2.scoore-h2 {
+    font-size: 50px;
+    color: #323232;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+span.change-span {
+    font-size: 20px;
+    color: #323232;
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: capitalize;
+    line-height: normal;
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+}
+
+h2.out-flag span {
+    font-size: 18px;
+}
+
+h2.out-flag {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 18px;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+
+.score-change img {
+    float: left;
+    position: absolute;
+    bottom: 0;
+}
+
+h2.valid-text {
+    margin: 3px 0;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+h2.valid-text span {
+    color: #b3d3a3
+}
+
+h2.top-text {
+    font-size: 28px;
+    color: #ff1919;
+    font-weight: bold;
+    margin: 3px 0;
+    text-align: center;
+}
+
+h2.top-text span.per-top {
+    font-size: 17px;
+}
+
+span.employ {
+    color: #000;
+    font-size: 17px;
+}
+
+h2.ford-text {
+    margin: 0 0;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.top-div {
+    border-left: 3px solid #6796a6;
+    padding: 0 0 0 0px;
+    margin: 15px -10px 0px 0px;
+}
+
+.flag-img img {
+    width: 98%;
+    height: auto;
+}
+
+.box-three {
+    border-left: 3px solid #6796a6;
+    padding: 0 0 0 10px;
+    margin: 0 0 0 0px;
+}
+
+p.bottom-text {
+    margin: 0;
+    padding: 30px;
+    color: #5a5a5a;
+    font-size: 14px;
+    text-align: center;
+}
+
+p.bottom-text {
+    margin: 0;
+    padding: 30px 10px;
+    color: #5a5a5a;
+    font-size: 10px;
+    text-align: left;
+    width: 75%;
+    float: left;
+}
+
+.bottom-text span {
+    margin: 0;
+    padding: 40px 10px 0 10px;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    width: 15%;
+    float: left;
+    font-weight: bold;
+}
+.btm-c{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
