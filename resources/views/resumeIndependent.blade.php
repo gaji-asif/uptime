@@ -760,10 +760,7 @@
                                   {{date('F',strtotime($image->created_at)).' '.date('d',strtotime($image->created_at)).'th '.date('Y',strtotime($image->created_at))}}
                                   @endif
                                   <br>
-
-                                  <font style="font-weight: bold;">@if(isset($image->subCategory)){{$image->subCategory->subcategory_name}}@endif </font>
-                                  
-                                  
+                                  <font style="font-weight: bold;">@if(isset($image->subCategory)){{$image->subCategory->subcategory_name}}@endif </font>                                
                                 </div>
                               </a>
                             </span>
@@ -1407,11 +1404,12 @@
 
      $('.print-button-print').click(function(){
 
-        var url      = window.location.href;
+        var url = window.location.href;
         $('#current_url').val(url);
 
         var messageToPost = {'ButtonId': 'print-button-print'};
         window.webkit.messageHandlers.callbackHandler.postMessage(messageToPost);
+     
 
      });
 
