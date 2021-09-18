@@ -3683,10 +3683,15 @@ class EmployeePortfolioController extends Controller
 
     public function sendSMSText(Request $request){
         try {
+
             $text = $request['smsText'];
             $name = $request['name'];
+            $firstName = $request['firstName'];
+            $lastName = $request['lastName'];
             $phone = $request['phone'];
-            $smsText = "Hi \n".$name." has scheduled.\n"."Phone number: ".$phone."\n\n".$text;
+
+            // $smsText = "Hi \n".$name." has scheduled.\n"."Phone number: ".$phone."\n\n".$text;
+            $smsText = "Hi \n".$firstName.$lastName."\n".$phone."\n".$text;
             $employee_id = $request['employee_id'];
             $this->sendSMS(Employee::where('id', $employee_id)->first()->phone_number, $text);
             return response()->json(['status' => true]);
@@ -3713,6 +3718,7 @@ class EmployeePortfolioController extends Controller
 
     public function sendContactText(Request $request){
         try {
+            //asif
             $name = $request['first_name']." ".$request['last_name'];
             $text_contact = $request['text_contact'];
             $phone = $request['phone'];
@@ -3725,7 +3731,8 @@ class EmployeePortfolioController extends Controller
             }
             else if ($this->isPhoneNumber($contact_information)){
                 // $text = "Hi ".$employee->full_name."\n".$name.' has requested a reference check on '.$employee->full_name." with the below message: \n\n".$text_contact."\n".'Thank you for using Uptime Profile!';
-                $text = $text_contact."\n"."Contact ".$name." at ".$phone;
+                //$text = $text_contact."\n"."Contact ".$name." at ".$phone;
+                $text = "Hi \n".$request['first_name'].$request['last_name']."\n".$phone."\n".$contact_information;
                 $this->sendSMS($contact_information, $text);
             }
             else {

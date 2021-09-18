@@ -410,9 +410,10 @@
   }
   .div-img {
     height: 350px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 0%;
+   /* width: 100%;*/
+   /* object-fit: cover;
+    object-position: 50% 0%;*/
+    border-radius: 20px;
   }
     </style>
   </head>
@@ -541,7 +542,7 @@
                     <img class="img-circle" src="{{ asset('images/avatar.png') }}" alt="Profile image">
                 @endif
             </div>
-            <div class="detail text-padding mt-3" style="text-align:center"">
+            <div class="detail text-padding mt-3" style="text-align:center">
               <button class="btn btn-primary" style="background: #2ebcae; border: none; margin-bottom:10px;" onclick="bookNow('<?php echo $user_data['phone_number'];?>')">
                   <i class="fas fa-phone"></i>
                 Schedule Now
@@ -647,32 +648,47 @@
             </div>
           <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-lg-5">
-              <div class="row common_padding">
-                <div class="badges col-lg-4">
-                  <i style="font-size:30px; color: #2EBCAF; background-color: #E1EFF3; padding: 20px; border-radius:40px;" class="fas fa-medal"></i>
-                </div>
-               <div class="hardWorker col-lg-8">
-                <h6 class="font-weight-bold">Hard-Worker</h6>
-                <p>{{ $user_data['hard_work']}} Recent Views</p>
-              </div>
-            </div>
-            </div>
-            <div class="col-lg-6">
+            
+            <div class="col-lg-10">
               
               <div class="d-flex justify-content-around align-items-center my-3 py-2">
-                
-                  <h5>
+
+                <div class="row">
+                  <div class="col-3">
                     <span class="badge badge-light text-white" style="float: unset; background: #2ebcae; font-size: 1rem;">{{ $emp->google_reviews_count }}</span>
                     <img src="{{ asset('images/google_icon.png') }}" alt="" width="50">
                     <strong class="text-dark text-bold" style="vertical-align: middle;">Reviews</strong>
+                  </div>
+                  <div class="col-6" style="text-align: center; margin:0 auto;">
+                     <span class="badge badge-light text-white" style="float: unset; background: #2ebcae; font-size: 1rem;">{{ $user_data['hard_work']}}</span>
+                    <img style="width: 16%;" src="{{ asset('images/recent_views.png') }}" alt="" width="50">
+                    <strong class="text-dark text-bold" style="vertical-align: middle;"> Recent Reviews</strong>
+                  </div>
+                  <div class="col-3">
+                     <span class="badge badge-light text-white" style="float: unset; background: #2ebcae; font-size: 1rem;">{{ $emp->fb_share_count }}</span>
+                  <img src="{{ asset('images/fb_icon.png') }}" alt="" width="40">
+                  <strong class="text-dark text-bold" style="vertical-align: middle;">Shares</strong>
+                  </div>
+                </div>
+                
+                <!--   <h5>
+                    <span class="badge badge-light text-white" style="float: unset; background: #2ebcae; font-size: 1rem;">{{ $emp->google_reviews_count }}</span>
+                    <img src="{{ asset('images/google_icon.png') }}" alt="" width="50">
+                    <strong class="text-dark text-bold" style="vertical-align: middle;">Reviews</strong>
+                  </h5>
+
+
+                   <h5>
+                    <span class="badge badge-light text-white" style="float: unset; background: #2ebcae; font-size: 1rem;">{{ $user_data['hard_work']}}</span>
+                    <img src="{{ asset('images/google_icon.png') }}" alt="" width="50">
+                    <strong class="text-dark text-bold" style="vertical-align: middle;"> Recent Reviews</strong>
                   </h5>
                 
                 <h5>
                   <span class="badge badge-light text-white" style="float: unset; background: #2ebcae; font-size: 1rem;">{{ $emp->fb_share_count }}</span>
                   <img src="{{ asset('images/fb_icon.png') }}" alt="" width="40">
                   <strong class="text-dark text-bold" style="vertical-align: middle;">Shares</strong>
-                </h5>
+                </h5> -->
               </div>
             </div>
           </div>
@@ -756,9 +772,15 @@
                               <a href="" data-srcset="https://uptime-prod.s3-ap-southeast-1.amazonaws.com/images/build/{{$image->image}}" data-sizes=""  style="cursor: default;">
                                 <img class="div-img" srcset="https://uptime-prod.s3-ap-southeast-1.amazonaws.com/images/build/{{$image->image}}" sizes="" src="{{ request()->fullUrl() }}" class="" alt=" challenge_image" style="height: 350px">
                                 <div class="text" style="text-align: left; margin: 0 auto; margin-left: 7px;">
+                                  <font style="text-transform: uppercase; font-size: 22px; font-weight: bold; font-family: inherit;" 
                                   @if(isset($image->subCategory))
-                                  {{date('F',strtotime($image->created_at)).' '.date('d',strtotime($image->created_at)).'th '.date('Y',strtotime($image->created_at))}}
+                                 <!--  {{date('F',strtotime($image->created_at)).' '.date('d',strtotime($image->created_at)).'th '.date('Y',strtotime($image->created_at))}} -->
+
+                                  {{date('M d', strtotime($image->created_at)) .', '.date('Y', strtotime($image->created_at))}}
+
+
                                   @endif
+                                </font>
                                   <br>
 
                                   <font style="font-weight: bold;">@if(isset($image->subCategory)){{$image->subCategory->subcategory_name}}@endif </font>
@@ -818,7 +840,7 @@
                                            <div><b>Rejected: </b><span>{{$testinomial['rejected_count']}}</span></div>
                                          </div> --}}
                                          <div class="approved reference-action" id="{{$testinomial['id']}}/{{$user_data['id']}}/1">
-                                           <div><br><b>Verified: </b><span>{{$testinomial['approved_count']}}</span></div>
+                                           <div><br><b>Work Verified: </b><span>{{$testinomial['approved_count']}}</span></div>
                                          </div>
                                        </div>
                                      </div>
@@ -857,7 +879,7 @@
                                            <div>{{$testinomial['rejected_count']}}</div>
                                          </div> --}}
                                          <div class="col-md-12 approved" id="{{$testinomial['id']}}/{{$user_data['id']}}/1">
-                                           <div><b>Verified</b></div>
+                                           <div><b>Work Verified</b></div>
                                            <div>{{$testinomial['approved_count']}}</div>
                                          </div>
                                         </div>
@@ -2953,10 +2975,11 @@
       let name = firstName + ' ' + lastName
       let phone = $('#phone_book').val()
 
-      $('#bookSmsText').val('')
-      $('#first_name_book').val('')
-      $('#last_name_book').val('')
-      $('#phone_book').val('')
+      if(phone === '' || !phone ){
+        alert("Please Fill up the phone number.");
+        return;
+      }
+      else{
 
       bookModal.style.display = 'none'
       $.ajax({
@@ -2965,14 +2988,17 @@
         },
         url: "{{ url('sendBookSMS') }}",
         type:'POST',
-        dataType:'json',
+       // dataType:'json',
         data: {
           smsText,
+          firstName,
+          lastName,
           name,
           phone,
           employee_id : <?php echo $user_data['id'] ?>
         },
         success: function(result){
+          alert(result);
           if (result.status){
             alert('Sent Text successfully!');
           }
@@ -2981,6 +3007,14 @@
           }
         }
       });
+      }
+
+      // $('#bookSmsText').val('')
+      // $('#first_name_book').val('')
+      // $('#last_name_book').val('')
+      // $('#phone_book').val('')
+
+      
     }
 
     function sendViewerName(){
