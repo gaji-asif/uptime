@@ -528,7 +528,7 @@ class EmployeePortfolioController extends Controller
         usort($region_win_challenge, function ($a, $b) {
             return $b - $a;
         });
-
+        
         $region_rank = $this->getRank($region_win_challenge, $emp_points);
         $user_data['company_rank'] = $company_rank;
         $user_data['region_rank'] = $region_rank;
@@ -737,19 +737,19 @@ class EmployeePortfolioController extends Controller
             ->where('is_deleted', '0')
             ->get();
 
-        $comp_win_challenge = array();
+        // $comp_win_challenge = array();
 
-        if ($all_employee) {
-            foreach ($all_employee as $emp) {
-                $emp->point = $api->countPoint($emp->id);
-                $comp_win_challenge[] = $emp->point;
-            }
-        }
-        usort($comp_win_challenge, function ($a, $b) {
-            return $b - $a;
-        });
+        // if ($all_employee) {
+        //     foreach ($all_employee as $emp) {
+        //         $emp->point = $api->countPoint($emp->id);
+        //         $comp_win_challenge[] = $emp->point;
+        //     }
+        // }
+        // usort($comp_win_challenge, function ($a, $b) {
+        //     return $b - $a;
+        // });
 
-        $company_rank = $this->getRank($comp_win_challenge, $emp_points);
+        // $company_rank = $this->getRank($comp_win_challenge, $emp_points);
 
         //get the region rank
         $region_win_challenge = array();
@@ -765,7 +765,7 @@ class EmployeePortfolioController extends Controller
         });
 
         $region_rank = $this->getRank($region_win_challenge, $emp_points);
-        $user_data['company_rank'] = $company_rank;
+        // $user_data['company_rank'] = $company_rank;
         $user_data['region_rank'] = $region_rank;
 
         $user_data['regionchalcount'] = $this->getRegionalChallengeCountByDate($employee, $startdate, $enddate);
@@ -1298,6 +1298,12 @@ class EmployeePortfolioController extends Controller
     public function dateindexIndependent(Request $request, $id, $startdate, $enddate)
     {
      
+        
+
+
+        
+
+        // block 1 start net excution time  0.036001205444336Milliseconds
 
         $startdate_old = $startdate;
         $enddate_old = $enddate;
@@ -1318,8 +1324,11 @@ class EmployeePortfolioController extends Controller
         $current_month    = $end_arr[0] . '-' . $end_arr[1] .'-' . $end_arr[2];
 
 
+        // block 1 end net excution time  0.036001205444336Milliseconds
+      
 
-
+        // block 2 start net excution time 259.23299789429Milliseconds  
+  
         $employee = Employee::query()
             ->with(['lostBuilds', 'wonBuilds', 'allBuilds.challenge'])
             ->find($id);
@@ -1342,6 +1351,14 @@ class EmployeePortfolioController extends Controller
         $times = $days . " days / " . $hours . " hours";
         $api = new ApiController;
         $emp_points = $api->countPoint($id);
+
+      
+        // block 2 end net excution time 259.23299789429Milliseconds
+
+
+        // block 3 start net excution time  2847.9509353638 Milliseconds
+       
+      
         //get the company rank
         $comp_win_chal = array();
         $all_employee = Employee::query()
@@ -1349,20 +1366,33 @@ class EmployeePortfolioController extends Controller
             ->where('company_id', $employee->company_id)
             ->where('is_deleted', '0')
             ->get();
+  
+        
+        // $comp_win_challenge = array();
 
-        $comp_win_challenge = array();
+ 
+        
 
-        if ($all_employee) {
-            foreach ($all_employee as $emp) {
-                $emp->point = $api->countPoint($emp->id);
-                $comp_win_challenge[] = $emp->point;
-            }
-        }
-        usort($comp_win_challenge, function ($a, $b) {
-            return $b - $a;
-        });
+        // if ($all_employee) {
+        //     foreach ($all_employee as $emp) {
+        //         $emp->point = $api->countPoint($emp->id);
+        //         $comp_win_challenge[] = $emp->point;
+        //     }
+        // }
 
-        $company_rank = $this->getRank($comp_win_challenge, $emp_points);
+        // usort($comp_win_challenge, function ($a, $b) {
+        //     return $b - $a;
+        // });
+     
+       
+        // $company_rank = $this->getRank($comp_win_challenge, $emp_points);
+
+
+
+        // block 3 end net excution time  2847.9509353638 Milliseconds
+
+
+        // block 4 start net excution time  14.256000518799 Milliseconds
 
         //get the region rank
         $region_win_challenge = array();
@@ -1377,7 +1407,8 @@ class EmployeePortfolioController extends Controller
         });
 
         $region_rank = $this->getRank($region_win_challenge, $emp_points);
-        $user_data['company_rank'] = $company_rank;
+     
+        // $user_data['company_rank'] = $company_rank;
         $user_data['region_rank'] = $region_rank;
         if (empty($request->search)) {
             $user_data['regionchalcount'] = $this->getRegionalChallengeCountByDate($employee, $startdate, $enddate);
@@ -1389,8 +1420,13 @@ class EmployeePortfolioController extends Controller
             $user_data['duelcount'] = $this->getDuelCountByDateSearch($employee, $startdate, $enddate, $request->search);
         }
 
+   
+        // block 4 end net excution time  14.256000518799 Milliseconds
+
         //get user detail info
 
+        // block 5 start net excution time  69.802045822144 Milliseconds
+  
         $user_data['email'] = $employee->email;
         $user_data['name'] = $employee->full_name;
         $user_data['phone_number'] = $this->formatPhoneNumber($employee->phone_number);
@@ -1458,6 +1494,10 @@ class EmployeePortfolioController extends Controller
         $categoryTable = (new Categories())->getTable();
         $subCategoryTable = (new Subcategory())->getTable();
 
+        // block 5 end net excution time 69.802045822144 Milliseconds
+       
+        // block 6 start net excution time  31.43310546875 Milliseconds
+      
         $builds = Builds::query()
             ->select([
                 "{$buildTable}.*",
@@ -1482,10 +1522,16 @@ class EmployeePortfolioController extends Controller
             ->whereBetween("{$buildTable}.created_at", [$startdate, $enddate])
             ->orderBy("{$buildTable}.created_at", 'desc')
             ->get();
-
+        
             // Map subcategories to "Skills" in frontend, instead of categories
+     
+
+            // block 6 end net excution time 31.43310546875 Milliseconds
+        
+            // block 7 start net excution time  0.44894218444824 Milliseconds
+          
         $categories = $builds->groupBy('subcategory_id') //->groupBy('category_name')
-            ->map(function ($builds) {
+        ->map(function ($builds) {
 
                 $category = new \stdClass();
                 $category->id = $builds->first()->subcategory_id;
@@ -1493,10 +1539,15 @@ class EmployeePortfolioController extends Controller
                 $category->builds_count = $builds->count();
                 $category->builds = $builds;
 
-                return $category;
-            })->sortByDesc('builds_count')
-            ->values();
+            return $category;
+        })->sortByDesc('builds_count')
+        ->values();
 
+    
+        // block 7 end net excution time 0.44894218444824 Milliseconds
+
+        // block 8 start net excution time  32.120943069458 Milliseconds
+       
         $search_cat = '';
         // Percentage meter
         $totalBuilds = Builds::where('employee_id', $id)->whereIn('status',array('1','2'))->count();
@@ -1513,8 +1564,11 @@ class EmployeePortfolioController extends Controller
         }
         $user_data['hard_work'] = $employeePortfolioViewers->count(); 
     // moin
-        $images = Builds::where('employee_id',$id)->with('subCategory')->latest()->get()->take(5);
 
+        $images = Builds::where('employee_id',$id)->with('subCategory')->latest()->get()->take(5);
+      
+        // block 8 end net excution time 32.120943069458 Milliseconds
+    
         return view('employeeportfolioIndependent')
             ->with('testinomials_data', $testinomials_data)
             ->with('user_data', $user_data)
