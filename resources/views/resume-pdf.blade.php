@@ -476,7 +476,24 @@
 
               }
           </style>
-            <div class="row common_padding">
+          <div class="row" style="margin-top: 20px;">
+            <div class="col-4 text-center">
+              <p><button class="btn btn-success">{{ $user_data['google_reviews_count']}}</button></p>
+              <p> <img src="{{ asset('images/google_icon.png') }}" alt="" width="50"></p>
+              <p>Reviews</p>
+            </div>
+            <div class="col-4 text-center">
+              <p><button class="btn btn-success">{{ $user_data['hard_work']}}</button></p>
+              <p> <img src="{{ asset('images/recent_views.png') }}" alt="" width="50"></p>
+              <p>Views</p>
+            </div>
+            <div class="col-4 text-center">
+              <p><button class="btn btn-success">{{ $user_data['fb_share_count']}}</button></p>
+              <p> <img src="{{ asset('images/fb_icon.png') }}" alt="" width="50"></p>
+              <p>Shares</p>
+            </div>
+          </div>
+           <!--  <div class="row common_padding">
                 <div class="badges col-lg-4">
                   <i style="font-size:30px; color: #2EBCAF; background-color: #E1EFF3; padding: 20px; border-radius:40px;" class="fas fa-medal"></i>
                 </div>
@@ -484,11 +501,13 @@
                 <h6 class="font-weight-bold">Hard-Worker</h6>
                 <p>{{ $user_data['hard_work']}} Recent Views</p>
               </div>
-            </div>
+            </div> -->
           <div class="col-md-12">
-            <div class="reference-layer" style="height: 720px; margin-top: 200px;">
+            <div class="reference-layer" style="height: 720px; margin-top: 50px;">
               <div style="position: relative">
-                <h4 class="text-center">{{count($testinomials_data['employee'])}} Promoters</h4>
+                <h4 class="text-center" style="font-size: 24px; color: blue;">
+                <img src="{{ asset('images/verified.png') }}" alt="" width="50">
+                Verified References <font style="color: #000000;">{{count($testinomials_data['employee'])}}</font></h4>
 {{--                @if(count($testinomials_data['employee']) > 3)--}}
 
 

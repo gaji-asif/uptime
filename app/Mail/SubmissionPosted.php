@@ -46,5 +46,6 @@ class SubmissionPosted extends Mailable
                             'uuid' => $this->batch->id
                         ])
                     ]);
+                
     }
 }

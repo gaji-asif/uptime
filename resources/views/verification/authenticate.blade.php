@@ -51,15 +51,39 @@
                 <div class="form-group">
                   <label for="firstname">First Name</label>
                   <input type="text" class="form-control" id="firstname"
-                    value="{{$verifier['firstname']}}" id="firstname" name="firstname" 
+                    value="{{ucfirst($verifier['firstname'])}}" id="firstname" name="firstname" 
                     <?php echo (!!$authStep)?"disabled":"" ?> required>
                 </div>
                 <div class="form-group">
                   <label for="lastname">Last Name</label>
                   <input type="text" class="form-control" name="lastname" 
-                    value="{{$verifier['lastname']}}" id="lastname" name="lastname" 
+                    value="{{ucfirst($verifier['lastname'])}}" id="lastname" name="lastname" 
                     <?php echo (!!$authStep)?"disabled":"" ?> required>
                 </div>
+
+                <script>
+                  document.getElementById("firstname").addEventListener("keypress", function(e) {
+                      if(this.selectionStart == 0) {
+                        // uppercase first letter
+                        forceKeyPressUppercase(e);
+                      } else {
+                        // lowercase other letters
+                        forceKeyPressLowercase(e);
+                      }
+                    }, false);
+
+
+                  document.getElementById("lastname").addEventListener("keypress", function(e) {
+                      if(this.selectionStart == 0) {
+                        // uppercase first letter
+                        forceKeyPressUppercase(e);
+                      } else {
+                        // lowercase other letters
+                        forceKeyPressLowercase(e);
+                      }
+                    }, false);
+
+                  </script>
                 
                 <div class="form-group">
                   <label for="phonenumber">Phone number</label>

@@ -414,12 +414,6 @@
    /* object-fit: cover;
     object-position: 50% 0%;*/
     border-radius: 20px;
-    
-
-  }
-
-  .owl-carousel .owl-item img{
-    border: 1px solid black;
   }
 
   .slider-image{
@@ -782,9 +776,9 @@
                           <div class="mySlides fades mItem">
                             <span id="{{$image->id}}-{{$image->subcategory}}" class="slider-image">
                               <a href="" data-srcset="https://uptime-prod.s3-ap-southeast-1.amazonaws.com/images/build/{{$image->image}}" data-sizes=""  style="cursor: default;">
-                                <img class="div-img" srcset="https://uptime-prod.s3-ap-southeast-1.amazonaws.com/images/build/{{$image->image}}" sizes="" src="{{ request()->fullUrl() }}"  alt=" challenge_image" style="height: 350px">
-                                <div class="text" style="text-align: left; margin: 0 auto; margin-left: 7px; display: table-cell; -webkit-text-stroke: 1px #000000; font-family: 'open sans'; font-size: 30px;">
-                                  <font style="text-transform: uppercase; font-size: 30px; font-weight: bold; -webkit-text-stroke:1px #000000;"
+                                <img class="div-img" srcset="https://uptime-prod.s3-ap-southeast-1.amazonaws.com/images/build/{{$image->image}}" sizes="" src="{{ request()->fullUrl() }}" class="" alt=" challenge_image" style="height: 350px">
+                                <div class="text" style="text-align: left; margin: 0 auto; margin-left: 7px; display: table-cell;">
+                                  <font style="text-transform: uppercase; font-size: 30px; font-weight: bold; font-family: inherit; -webkit-text-stroke:1px #000000;" 
                                   @if(isset($image->subCategory))
                                  <!--  {{date('F',strtotime($image->created_at)).' '.date('d',strtotime($image->created_at)).'th '.date('Y',strtotime($image->created_at))}} -->
 
@@ -794,7 +788,7 @@
                                   @endif
                                 </font>
                                   <br>
-                                  <font style="font-weight: bold; font-family: inherit; -webkit-text-stroke:1px #000000;">@if(isset($image->subCategory)){{$image->subCategory->subcategory_name}}@endif </font>
+                                  <font style="font-weight: bold; -webkit-text-stroke: 1px #00000;">@if(isset($image->subCategory)){{$image->subCategory->subcategory_name}}@endif </font>                                
                                 </div>
                               </a>
                             </span>
@@ -820,7 +814,7 @@
                           <div class="reference-layer">
                             <div style="position: relative">
 {{--                               <h4>{{count($testinomials_data['employee'])}} Promoters</h4>--}}
-                               <h4 class="text-danger pr-4" style="margin-left: -25px;"><img src="{{ asset('images/verified_clients.png') }}" alt="" width="30"> Verified References ({{ count($testinomials_data['employee'])}})</h4>
+                               <h4 class="text-danger pr-4"><img src="{{ asset('images/verified_clients.png') }}" alt="" width="30"> Verified References ({{ count($testinomials_data['employee'])}})</h4>
 
                                @if(count($testinomials_data['employee']) > 3)
                                <div class="reference-more" id="reference-more">View all</div>

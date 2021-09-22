@@ -1277,8 +1277,8 @@ class EmployeePortfolioController extends Controller
             $buildSuccessRate = floor(($approvedBuilds/ $totalBuilds) * 100);
         }
         // moin
-        $images = Builds::where('employee_id',$id)->with('subCategory')->latest()->get()->take(5);
-
+        // $images = Builds::where('employee_id',$id)->with('subCategory')->latest()->get()->take(5);
+        $images = Builds::where('employee_id',$id)->where('status', 1)->with('subCategory')->latest()->get()->take(5);
         return view('employeeportfolio', [
             'testinomials_data' => $testinomials_data,
             'user_data' => $user_data,
@@ -1297,11 +1297,6 @@ class EmployeePortfolioController extends Controller
 
     public function dateindexIndependent(Request $request, $id, $startdate, $enddate)
     {
-     
-        
-
-
-        
 
         // block 1 start net excution time  0.036001205444336Milliseconds
 
@@ -1565,11 +1560,12 @@ class EmployeePortfolioController extends Controller
         $user_data['hard_work'] = $employeePortfolioViewers->count(); 
     // moin
 
-        $images = Builds::where('employee_id',$id)->with('subCategory')->latest()->get()->take(5);
+        $images = Builds::where('employee_id',$id)->where('status', 1)->with('subCategory')->latest()->get()->take(5);
       
         // block 8 end net excution time 32.120943069458 Milliseconds
     
-        return view('employeeportfolioIndependent')
+         return view('employeeportfolioIndependent')
+         // return view('resume-pdf')
             ->with('testinomials_data', $testinomials_data)
             ->with('user_data', $user_data)
             ->with('categories', $categories)
@@ -3745,9 +3741,9 @@ class EmployeePortfolioController extends Controller
             $phone = $request['phone'];
 
             // $smsText = "Hi \n".$name." has scheduled.\n"."Phone number: ".$phone."\n\n".$text;
-            $smsText = "Hi \n".$firstName.$lastName."\n".$phone."\n".$text;
+            $smsText = $firstName." ".$lastName."\n".$phone."\n".$text;
             $employee_id = $request['employee_id'];
-            $this->sendSMS(Employee::where('id', $employee_id)->first()->phone_number, $text);
+            $this->sendSMS(Employee::where('id', $employee_id)->first()->phone_number, $smsText);
             return response()->json(['status' => true]);
         } catch (\Throwable $th) {
             return response()->json(['status' => false, 'message' => $th->getMessage()]);
@@ -3786,7 +3782,7 @@ class EmployeePortfolioController extends Controller
             else if ($this->isPhoneNumber($contact_information)){
                 // $text = "Hi ".$employee->full_name."\n".$name.' has requested a reference check on '.$employee->full_name." with the below message: \n\n".$text_contact."\n".'Thank you for using Uptime Profile!';
                 //$text = $text_contact."\n"."Contact ".$name." at ".$phone;
-                $text = "Hi \n".$request['first_name'].$request['last_name']."\n".$phone."\n".$contact_information;
+                $text = $request['first_name']." ".$request['last_name']."\n".$phone."\n".$contact_information;
                 $this->sendSMS($contact_information, $text);
             }
             else {

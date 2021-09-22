@@ -2851,6 +2851,8 @@ public function getRegionfromCompany(Request $request){
               // $leader = Employee::where('email', $request->email)->firstOrFail();
               $employee = Employee::findOrFail($builds->employee_id);
 
+              // start asif area
+              //echo $builds; exit;
               if(filter_var($request->email, FILTER_VALIDATE_EMAIL)) {
                   Mail::to($request->email)->send( new \App\Mail\SubmissionPosted($builds, $employee) );
               } else {
@@ -3142,7 +3144,7 @@ public function getRegionfromCompany(Request $request){
         $content = $employee->full_name. " has requested you to review and approve their work with you.\n"
             ."Click link below\n";
 
-        $url = route('verify.submission', ['uuid' => $batch->id]);
+        $url = route('verify.submission', ['uuid' => $batch->id]); //asif
 
         // $bitlyClient = new BitlyClient(getenv('BITLY_TOKEN'));
         // $options = ['longUrl' => $url];

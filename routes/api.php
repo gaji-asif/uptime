@@ -38,7 +38,8 @@ Route::post('setUUid', 'API\ApiController@setUUid')->middleware(APIAuth::class);
 Route::post('employeeRegister', 'API\ApiController@employeeRegister');//->middleware(APIAuth::class)
 Route::post('changepassword', 'API\ApiController@changePassword')->middleware(APIAuth::class);
 
-Route::post('buildpost', 'API\ApiController@buildPost')->middleware(APIAuth::class);
+// Route::post('buildpost', 'API\ApiController@buildPost')->middleware(APIAuth::class);
+Route::post('buildpost', 'API\ApiController@buildPost');
 Route::post('buildposts', 'API\ApiController@buildPosts')->middleware(APIAuth::class);
 
 Route::post('reminderBuild', 'API\ApiController@reminderBuild');
